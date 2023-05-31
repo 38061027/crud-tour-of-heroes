@@ -1,0 +1,17 @@
+
+
+.content-dash{
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .content-dash{
+    flex-direction: column;
+  }
+
+}

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRountingModule } from './app-rounting.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 //Components
 
@@ -19,6 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -29,6 +32,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HeroesComponent,
     HeroDetailsComponent,
     MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatListModule,
     AppRountingModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

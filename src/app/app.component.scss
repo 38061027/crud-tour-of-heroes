@@ -1,8 +1,14 @@
 
+
 .content{
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
   margin: 20px;
 }
 
 .example-spacer{
   flex: 1 1 auto;
 }
+
+
