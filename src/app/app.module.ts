@@ -26,6 +26,8 @@ import {MatCardModule} from '@angular/material/card';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +47,8 @@ import {MatCardModule} from '@angular/material/card';
     AppRountingModule,
     MatIconModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
