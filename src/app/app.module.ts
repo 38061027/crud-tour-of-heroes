@@ -11,16 +11,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { MaterialModule } from './material/material.module';
 
-//Angular Material
-
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatExpansionModule} from '@angular/material/expansion';
-import { MatListModule } from '@angular/material/list';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -34,21 +26,16 @@ import {MatCardModule} from '@angular/material/card';
     HeroesComponent,
     HeroDetailsComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatExpansionModule,
-    MatListModule,
     AppRountingModule,
-    MatIconModule,
-    MatTooltipModule,
-    MatCardModule,
-  
+    MaterialModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

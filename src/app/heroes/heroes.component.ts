@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero.model';
 import { HeroService } from '../hero.service';
-import { Observable } from 'rxjs/internal/Observable';
 import { MessageService } from '../message.service';
 
 
@@ -13,7 +12,7 @@ import { MessageService } from '../message.service';
 export class HeroesComponent implements OnInit{
 
 
-
+  displayedColumn: string[] = ['id', 'name'];
   heroes: Hero[] = [];
 
 
