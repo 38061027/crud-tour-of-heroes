@@ -7,11 +7,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 //Components
 
-import { MessagesComponent } from './messages/messages.component';
+
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
-import { MaterialModule } from './material/material.module';
+import { CoreModule } from './core/core.module';
+
 
 
 
@@ -25,7 +26,6 @@ import { MaterialModule } from './material/material.module';
     AppComponent,
     HeroesComponent,
     HeroDetailsComponent,
-    MessagesComponent,
     DashboardComponent,
 
   ],
@@ -34,7 +34,8 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     BrowserAnimationsModule,
     AppRountingModule,
-    MaterialModule
+    CoreModule,
+
 
   ],
   providers: [],
