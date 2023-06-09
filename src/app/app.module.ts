@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRountingModule } from './app-rounting.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 //Components
 
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { CoreModule } from './core/core.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { HeroesModule } from './heroes/heroes.module';
 
 
 
@@ -24,15 +24,24 @@ import { CoreModule } from './core/core.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailsComponent,
-    DashboardComponent,
+
+
 
   ],
   imports: [
+
+    //@angular
+
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+
+    // feature
+    DashboardModule,
+    HeroesModule,
+
+    // app
+
     AppRountingModule,
     CoreModule,
 
