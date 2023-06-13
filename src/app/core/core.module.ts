@@ -4,12 +4,14 @@ import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './components/page-not-found.component';
 
 
 
 const COMPONENTS = [
   MessagesComponent,
-  ToolbarComponent
+  ToolbarComponent,
+  PageNotFoundComponent
 ];
 
 const MODULES = [
@@ -19,6 +21,7 @@ const MODULES = [
 @NgModule({
   declarations: [
     COMPONENTS,
+
   ],
   imports: [
     CommonModule,

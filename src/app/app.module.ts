@@ -10,8 +10,7 @@ import { AppRountingModule } from './app-rounting.module';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { HeroesModule } from './heroes/heroes.module';
+
 
 
 
@@ -36,9 +35,6 @@ import { HeroesModule } from './heroes/heroes.module';
     FormsModule,
     BrowserAnimationsModule,
 
-    // feature
-    DashboardModule,
-    HeroesModule,
 
     // app
 

@@ -6,12 +6,14 @@ import { DashboardRountingModule } from './dashboard-rounting.module';
 
 
 
+
 @NgModule({
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    DashboardRountingModule
+    DashboardRountingModule,
+
   ]
 })
 export class DashboardModule { }
