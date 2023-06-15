@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRountingModule } from './app-rounting.module';
-
+import { HttpClientModule } from '@angular/common/http'
 
 //Components
 
@@ -30,11 +30,10 @@ import { CoreModule } from './core/core.module';
   imports: [
 
     //@angular
-
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-
+    HttpClientModule,
 
     // app
 
