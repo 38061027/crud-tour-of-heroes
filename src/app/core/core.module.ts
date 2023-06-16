@@ -5,13 +5,17 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './components/page-not-found.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LoadingInterceptor } from './interceptors/loading.interceptor';
 
 
 
 const COMPONENTS = [
   MessagesComponent,
   ToolbarComponent,
-  PageNotFoundComponent
+  PageNotFoundComponent,
+  LoadingComponent
 ];
 
 const MODULES = [
@@ -22,13 +26,21 @@ const MODULES = [
   declarations: [
     COMPONENTS,
 
+
   ],
   imports: [
     CommonModule,
     MODULES,
     RouterModule
   ],
-  exports: [ COMPONENTS , MODULES]
+  exports: [ COMPONENTS , MODULES],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingInterceptor,
+      multi: true
+    }
+  ]
 })
 export class CoreModule {
 

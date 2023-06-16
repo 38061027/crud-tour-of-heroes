@@ -11,6 +11,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
+
 
   const MODULES = [
     MatToolbarModule,
@@ -22,6 +25,8 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     MatInputModule,
     MatTableModule,
+    MatProgressSpinnerModule
+
   ]
 
 
