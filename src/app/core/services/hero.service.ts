@@ -20,7 +20,7 @@ export class HeroService {
   ) {}
 
   // GET /heroes
-  getHeroes(): Observable<Hero[]> {
+  getAll(): Observable<Hero[]> {
     return this.http
       .get<Hero[]>(this.heroesUrl)
       .pipe(tap((heroes) => this.log(`fetched ${heroes.length} hero(es)`)));
@@ -28,7 +28,7 @@ export class HeroService {
 
   //GET /heroes/id
 
-  getHero(id: number): Observable<Hero> {
+  getOne(id: number): Observable<Hero> {
     return this.http
       .get<Hero>(`${this.heroesUrl}/${id}`)
       .pipe(
