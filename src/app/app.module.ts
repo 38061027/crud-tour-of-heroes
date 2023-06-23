@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
 import { AppRountingModule } from './app-rounting.module';
 import { HttpClientModule } from '@angular/common/http'
 
@@ -31,7 +30,6 @@ import { CoreModule } from './core/core.module';
 
     //@angular
     BrowserModule,
-    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
 
