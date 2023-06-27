@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { Hero } from '../models/hero.model';
-import { Observable, tap } from 'rxjs';
+import { Observable, tap, of } from 'rxjs';
 import { MessageService } from './message.service';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
@@ -30,10 +30,29 @@ export class HeroService {
 
   getOne(id: number): Observable<Hero> {
     return this.http
-      .get<Hero>(`${this.heroesUrl}/${id}`)
+      .get<Hero>(this.getUrl(id))
       .pipe(
         tap((hero) => this.log(`fetched ${this.descAttributes(hero)}`))
       );
+  }
+
+  // GET /heroes?name=term
+
+  search(term: string):Observable<Hero[]>{
+    if(!term.trim()){
+      return of([])
+    }
+
+    return this.http.get<Hero[]>(`${this.heroesUrl}?name=${term}`)
+    .pipe(
+      tap((heroes) =>
+      heroes.length
+      ? this.log(`found ${heroes.length} hero(es) matching "${term}"`)
+      : this.log(`no heroes matching "${term}"`)
+
+
+      )
+    );
   }
 
   /// POST /heroes
@@ -47,10 +66,18 @@ export class HeroService {
 
   //PUT /heroes/id
   update(hero: Hero):Observable<Hero>{
-    return this.http.put<Hero>(`${this.heroesUrl}/${hero.id}`, hero).pipe(
+    return this.http.put<Hero>(this.getUrl(hero.id), hero).pipe(
       tap((hero) => this.log(`updated ${this.descAttributes(hero)}`))
     )
   }
+
+  // DELETE /heroes/id
+
+    delete(hero: Hero): Observable<any>{
+      return this.http.delete<any>(this.getUrl(hero.id)).pipe(
+        tap(() => this.log(`Deleted ${this.descAttributes(hero)}`))
+      )
+    }
 
 
   private descAttributes(hero: Hero):string{
@@ -62,5 +89,8 @@ export class HeroService {
   }
 
 
+  private getUrl(id: number): string{
+    return `${this.heroesUrl}/${id}`
+  }
 
 }
