@@ -1,5 +1,12 @@
 
 
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
 .content-dash{
   display: flex;
   gap: 12px;

@@ -14,6 +14,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
   const MODULES = [
@@ -28,7 +30,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatTableModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
   ]
 
 
