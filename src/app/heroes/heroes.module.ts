@@ -6,6 +6,7 @@ import { MaterialModule } from '../material/material.module';
 
 import { HeroesRountingModule } from './heroes-rounting.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
   HeroesRountingModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  SharedModule
 
   ]
 })
