@@ -54,27 +54,27 @@ export class HeroDetailsComponent implements OnInit{
       this.location.back();
     }
 
- 
+
     create():void{
-  
+
 
       const { valid, value} = this.form;
- 
+
       if(valid){
        const hero: Hero = {
          name: value.name,
        } as Hero;
-     
+
        this.heroService.create(hero).subscribe(() => this.goBack())
       }else{
         this.showErrorMsg()
       }
 
-    
+
     }
 
     update():void{
-     
+
 
      const { valid, value} = this.form;
 
@@ -83,7 +83,7 @@ export class HeroDetailsComponent implements OnInit{
         id: this.hero.id,
         name: value.name,
       } as Hero
-    
+
       this.heroService.update(hero).subscribe(() => this.goBack())
      }else{
       this.showErrorMsg();

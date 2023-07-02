@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
-import { Observable, Subject, debounce, debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
+import { Observable, Subject, debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 import { Hero } from 'src/app/core/models/hero.model';
 import { HeroService } from 'src/app/core/services/hero.service';
 
