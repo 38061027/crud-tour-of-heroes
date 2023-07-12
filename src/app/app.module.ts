@@ -4,13 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRountingModule } from './app-rounting.module';
 import { HttpClientModule } from '@angular/common/http'
 
+
 //Components
 
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-
-
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -37,6 +37,7 @@ import { CoreModule } from './core/core.module';
 
     AppRountingModule,
     CoreModule,
+    AuthModule,
 
 
   ],

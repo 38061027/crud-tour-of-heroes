@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   <mat-card-content>
   <h2>Page Not Found</h2>
 <p>
-Não foi possível encontrar essa página! Nem mesmo com visão de raio-x.</p>
+Não foi possível encontrar essa página! Nem mesmo com visão raio-x.</p>
   </mat-card-content>
 
   <mat-card-actions>

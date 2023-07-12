@@ -14,12 +14,14 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
 
 
 
+
 const COMPONENTS = [
   MessagesComponent,
   ToolbarComponent,
   PageNotFoundComponent,
   LoadingComponent,
-  ConfirmationDialogComponent
+  ConfirmationDialogComponent,
+
 ];
 
 const MODULES = [
