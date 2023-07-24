@@ -2,8 +2,8 @@
 
 
 
-<button class="add-button" color="accent" mat-fab routerLink="new">
-  <mat-icon>add</mat-icon>
+<button class="add-button" color="primary" mat-fab routerLink="new">
+  <mat-icon class="add">add</mat-icon>
 </button>
 
 <app-hero-search [label]="'Hero to Delete'" (selected)="onSelected($event)"></app-hero-search>
@@ -27,8 +27,9 @@
     <mat-cell *matCellDef="let row">
 
       <button mat-icon-button matTooltip="Delete this item"
+      class="delete-btn"
       (click)="delete(row); $event.stopPropagation()">
-        <mat-icon>delete</mat-icon>
+        <mat-icon class="delete">delete</mat-icon>
       </button>
     </mat-cell>
   </ng-container>

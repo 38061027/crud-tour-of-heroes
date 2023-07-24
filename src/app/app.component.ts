@@ -7,7 +7,7 @@ import { MenuItem } from './core/models/menu-item.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tour of heroes';
+  title = 'Tour Of Heroes';
 
   menuItems: MenuItem[] = [
     {
