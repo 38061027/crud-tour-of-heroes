@@ -6,7 +6,7 @@
 
 > Status: developed ✅
 >
-> ### Project developed by me, for implement CRUD (Create, Read, Update, Delete) operations for efficient data management.
+> ### Project developed by me, to implement CRUD (Create, Read, Update, Delete) operations for efficient data management.
 >
 > #### Technologies and libraries used in the project
 >
