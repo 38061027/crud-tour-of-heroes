@@ -1,6 +1,6 @@
 <h1 align="center" style="text-align: center;">
   Tour Of Heroes
-  <img width="35px" alt="Angular" src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"/>
+  <img width="40px" alt="Angular" src="https://angular.io/assets/images/logos/angular/angular.png"/>
 </h1>
 
 
@@ -33,6 +33,7 @@
 + Search
 + Confirmation dialog
 + Wildcard route
++ Two-way binding
 
 ## What can i do on this site?
 + Can you create, list, search, update and delete heroes in the Tour of Heroes!
